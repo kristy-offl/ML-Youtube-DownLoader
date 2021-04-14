@@ -10,6 +10,11 @@ async def start(client, message):
             "Report Bugs 😊", url="https://t.me/ML_SupportGroup")]
     ])
     
-    welcomed = f"Hey <b>{message.from_user.first_name}</b>\n/help for More info"
+    welcomed = f"Hey <b>{message.from_user.first_name}</b>\n a Simple YouTube Downloader Bot that can:
+  ➠ Download YouTube videos
+  ➠ Download audio from YouTube videos
+
+NB:  Bot may slow ,so wait 5 - 10 second to bot respond....
+please dont spam with links.../help for More info"
     await message.reply_text(welcomed, reply_markup=joinButton)
     raise StopPropagation
